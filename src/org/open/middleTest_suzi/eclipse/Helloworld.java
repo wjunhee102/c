@@ -4,11 +4,29 @@ public class Helloworld {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a;
-		a = 1;
-		long b = 2147483648L;
+		int a,b,c,d;
+		a = 80;
+		b = 100;
+		c = 100;
+		d = 90;
 		
-		System.out.println(b+a+"suzi said \"hello world!!\"\n HTML");
+		int sum = a + b + c + d;
+		
+		int avg = sum/4;
+		
+		String rank;
+		
+		if(avg >= 90) {
+			rank = "A" ;
+		} else if (avg >= 80) {
+			rank = "B";
+		} else if (avg >= 70) {
+			rank = "C";
+		} else {
+			rank = "D";		
+		}
+		
+		System.out.println("suzi test result " + rank);
 	}
 
 }
